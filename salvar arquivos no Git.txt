@@ -1,11 +1,24 @@
 salvar arquivos
 
-github
+github.com
+
+-git init (inicia uma pasta)
+
+-git branch master develop (altera o nome do branch atual parar um novo)
+
+-git remote add origin urlDogit ( adiciona o repositorio local parar um remoto)
+
+-git push -u origin develop ( enpurra/envia o repositorio local prar o externo (github.com)
 
 -git atatus
 
--git add .
+-git add .  (Adiciona um repositorio)
 
--git commit -m "02estrutura"
+-git commit -m "Mensagem do commit" (adiciona uma mensagem ao commit)
 
--git push -u origin develop.
+conecta o repositorio.
+
+-git config --global user.email "you@example.com"
+
+git config --global user.name "your name"
+
