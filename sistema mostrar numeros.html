@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+/* b) Desenvolva um sistema que o usuário informa cinco números através do comando
+prompt, em seguida exiba os valores informados e mostre a soma desses valores. */
+
+let numeros = []
+let soma = 0
+
+for (let index = 0; index < 5; index++) {
+    let numero = parseInt(prompt("Digite o numero"))
+    numeros.push(numero)
+    soma += numeros[index]
+    console.log("Valores informados: " + numeros[index])
+}
+
+console.log("Soma dos valores: "+ soma)
+</script>
+<body>
+    
+</body>
+</html>

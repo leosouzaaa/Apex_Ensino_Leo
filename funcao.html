@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Funções
+    <form>
+        <input type="text" placeholder="Primeira nota" id="nota1">
+        <input type="text" placeholder="Segunda nota" id="nota2">
+        <input type="button" value="Verificar" onclick="acao()">
+    </form>
+
+    <script>
+        function acao() {
+            var nota1 = parseInt(document.getElementById("nota1").value)
+            var nota2 = parseInt(document.getElementById("nota2").value)
+
+            var media = calculo(nota1, nota2)
+
+            var situacao = verificarSituacao(media)
+
+            alert("Aluno está " + situacao + " com a média " + media)
+        }
+
+        function calculo(nota1, nota2) {
+            return (nota1 + nota2) / 2
+        }
+
+        function verificarSituacao(media) {
+            return media >= 7 ? "aprovado" : "reprovado"
+        }
+    </script>
+    </script>
+    
+</body>
+</html>

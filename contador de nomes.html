@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* c) Crie um laço que peça nomes, poderão ser armazenados vários nomes, não há uma
+quantidade mínima nem máxima. Quando informada a palavra sair, exiba todos os
+nomes e informe a quantidade de nomes cadastrados. */
+let nomes = new Array
+let contadorDeNomes = 0
+let nome
+
+do {
+    nome = prompt("Informe um nome ou digite sair")
+    nomes.push(nome)
+    contadorDeNomes++
+} while (nome != "sair")
+
+for (let index = 0; index < nomes.length; index++) {
+    console.log(nomes[index])
+}
+console.log(contadorDeNomes)
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

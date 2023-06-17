@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /* d) O usuário informa cinco números, em seguida exiba em ordem contrária que foram
+informados. */
+let numeros = []
+for (let index = 0; index < 5; index++) {
+    let numero = parseInt(prompt("Digite um número:"))
+    numeros.push(numero)
+
+    console.log("Números informados: " + numeros[index])
+}
+
+let numerosInversos
+for (let index = numeros.length - 1; index >= 0; index--) {
+    console.log(numeros[index])
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>
