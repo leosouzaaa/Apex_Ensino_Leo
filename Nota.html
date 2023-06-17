@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Exercícios
+    /* a) Peça duas notas, em seguida realize a média e informe se o aluno está
+aprovado ou reprovado. Para essa atividade, o aluno precisa ter média 7 ou
+mais para ser considerado aprovado. */
+     var Nota1 = 10
+     var Nota2 = 4
+     if (Nota1 <= 10 || Nota2 >= 4) {
+        document.write ("Aprovado")
+     }else{
+        document.write ("reprovado")
+    }
+
+    document.write ("<br>")
+   
+    /*  b) O usuário informa dois valores numéricos, se forem iguais deverão ser
+somados, caso contrário multiplicados. */
+    var Valor1 = 10
+    var Valor2 = 4
+    if (Valor1 == Valor2) {
+        document.write (Valor1 + Valor2)
+    } else {
+        document.write (Valor1 * Valor2)
+        
+    }
+    
+    document.write ("<br>")
+    
+    
+    /* c) Haverá uma lista com três produtos que uma lanchonete vende, o usuário
+precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+cliente informe um pagamento inferior ao valor do pedido.
+  Codigo            |     Pedido          |        Valor
+    1                       Pizza                 12,00
+    2                   Pão de Queijo              4,00
+    3                      Macarrão               16,00 */
+
+    var Codigo1 = 12.00
+    var Codigo2 = 4.00
+    var Codigo3 = 16.00
+    var ValorCliente = 20.00
+    var Codigodoproduto1 = 1
+    var codigodoproduto2 = 2
+    var codigodoproduto3 = 3
+
+    if ( Codigodoproduto1 == 1 && ValorCliente >= Codigo1) {
+        document.write (ValorCliente - Codigo1)    
+    } else if ( Codigodoproduto2 == 2 && ValorCliente >= codigo2) {
+        document.write (ValorCliente - Codigo2)        
+    } else if ( codigodoproduto3 == 3 && ValorCliente >= Codigo3) {
+        document.write (ValorCliente - Codigo3)
+    }
+
+    document.write ("<br>")
+
+    /* d) Peça para o usuário informar três números, em seguida exiba o menor deles */
+
+    var Valor1 = 10
+    var Valor2 = 20
+    var Valor3 = 30
+    if ( Valor1 < Valor2 && Valor1 < Valor3) {
+        document.write (Valor1)
+    } else if ( Valor2 > Valor1 && Valor2 < Valor3) 
+        document.write (Valor2){
+    
+    } else if ( Valor3 < Valor1 && Valor3 > Valor2) 
+        document.write (Valor3)
+
+    
+
+    document.write ("<br>")
+
+    /* O usuário deverá informar a largura de cada lado de um triângulo, peça as
+três larguras (direito, inferior e esquerdo) e verifique o tipo de triângulo. Os
+tipos e triângulos são: */
+
+     /*     Tipo                |           Especificação 
+       Isósceles                Dois lados iguais e um diferente
+       Escaleno                        Três lados diferentes
+       Equilátero                      Três lados iguais */
+    
+       var Tipo1 = "Isósceles"
+       var Tipo2 = "Escaleno"
+       var Tipo3 = "Equilátero"
+       var direito = 15
+       var inferior = 21
+       var esquedo = 20
+       
+       if ( direito == esquedo && direito != inferior || inferior == esquedo && inferior != direito || direito == inferior && direito != esquedo) {
+          document.write ( Tipo1) 
+       } else if ( direito == inferior && direito == esquedo){
+          document.write ( Tipo3 )
+       } else if (direito != inferior && direito != esquedo && inferior != esquedo){
+          document.write ( Tipo2 )
+       }
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

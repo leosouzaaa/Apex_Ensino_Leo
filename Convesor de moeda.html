@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor de Moeda</title>
+    <script>
+/* b) Crie um conversor de moedas. Será informado o valor e as conversões:
+○ Real para Dólar
+○ Dólar para Real
+○ Real para Euro
+○ Euro para Real */
+var moeda = prompt("informe a moeda desejada(real para dólar, dólar para real, real para euro, euro para real)");
+var moeda1 = "real para dólar" 
+var moeda2 = "dólar para real"
+var moeda3 = "real para euro"
+var moeda4 = "euro para real"
+var valorcliente = 10
+
+switch (moeda) {
+    case moeda1:   
+    var valorcliente = prompt("Digite o Valor real/dólar")
+    document.writeln ( valorcliente / 5.00 )
+        break;
+
+    case moeda2:   
+    var valorcliente = prompt("Digite o Valor dólar/real")
+    document.writeln ( 5.00 * valorcliente)
+        break;
+    case moeda3:   
+    var valorcliente = prompt("Digite o Valor real/euro")
+    document.writeln ( valorcliente / 5.25 )
+        break;
+        
+    case moeda4:   
+    var valorcliente = prompt("Digite o Valor euro/real")
+    document.writeln ( 5.25 * valorcliente )
+        break;
+    
+        default:
+}
+ </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/* c) O usuário informa o nome de um produto, valor e segmento (vestuário,
+eletrônico ou alimentício). Se o segmento for vestuário será dado 5% de
+desconto sobre o valor do produto, caso eletrônico 8% e alimentício 10%. */
+    
+
+
+
+var produto = prompt("informe o segmento ( vestuário, eletrônico, alimentício ) ")
+var vestuário = "vestuário" 
+var eletrônico = "eletrônico"
+var alimentício = "alimentício"
+var cliente = 100
+
+switch (produto) {
+    case vestuário:   
+    var cliente = prompt("Você 5% de desconto")
+    document.writeln ( cliente - 0.05)
+        break;
+
+    case eletrônico:   
+    var cliente = prompt("Você 8% de desconto")
+    document.writeln ( cliente - 0.08)
+        break;
+    case alimentício:   
+    var cliente = prompt("Digite o Valor real/euro")
+    document.writeln ( cliente - 10.0 )
+        break;
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
